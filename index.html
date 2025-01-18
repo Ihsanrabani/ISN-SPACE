@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ISN Space</title>
+    <link rel="icon" type="image/x-icon" href="Assets/ISNbg_ico.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="flex justify-between items-center xl:px-14 px-5 pt-5 xl:px-28 w-full">
+        <div class="flex items-center">
+            <img src="Assets/ISN_ico.png" alt="" class="w-12 h-auto">
+            <h1 class="text-xl font-bold">ISN_</h1>
+        </div>
+        <div class="hidden xl:block">   
+            <a href="#home" class="">Home</a>
+            <span class="ml-4 mr-4">|</span>
+            <a href="#aboutMe" class="">About Me</a>
+            <span class="ml-4 mr-4">|</span>
+            <a href="#project" class="">My Project</a>
+            <span class="ml-4 mr-4">|</span>
+            <a href="#contact" class="">Contact Me</a>
+        </div>
+        <button onclick="onTrigger()" class="xl:hidden"><img src="Assets/burgerMenu_ico.png" alt=""></button>
+    </nav>
+
+    <div class="absolute w-full hidden mt-2" id="scrollMenu">
+        <button class="flex w-full items-center pl-3 py-1 bm-border" >
+            <a class="font-semibold" href="#home">Home</a>
+        </button>
+        <button class="flex w-full items-center pl-3 py-1 bm-border">
+            <a class="font-semibold" href="#aboutMe">About Me</a>
+        </button>
+        <button class="flex w-full items-center pl-3 py-1 bm-border">
+            <a class="font-semibold" href="#project">My Project</a>
+        </button>
+        <button class="flex w-full items-center pl-3 py-1 bm-border">
+            <a class="font-semibold" href="#contact">Contact Me</a>
+        </button>
+    </div> 
+    
+    
+    
+    <div class="w-full absolute flex items-center justify-end bottom-0 left-0">
+        <img src="Assets/scrollDown.gif" alt="" class="w-24 mr-3">
+    </div>
+
+    <section class="flex flex-col justify-center items-center h-screen mb-4" id="home">
+        <h1 class="ubuntu text-2xl xl:text-5xl">Hey👋, I'm Ihsan</h1><br>
+        <h1 class="ubuntu text-2xl xl:text-5xl">a <span class="autoType text-3xl xl:text-5xl my-color font-semibold"></span></h1><br>
+        <h1 class="ubuntu text-2xl xl:text-5xl">Welcome to my <span class="my-BG rounded px-1 font-semibold pb-.5 averia-sans">Portofolio</span></h1>
+    </section>
+
+    <section class="mb-4" id="aboutMe">
+        <div class="flex flex-col items-center mb-10">
+            <div class="flex flex-col items-center">
+                <h1 class="text-4xl ubuntu sticky">ABOUT ME</h1> 
+                <div class="my-BGcolor w-9 h-1 mt-3"></div>
+                <p class="text-center px-20 mt-3 text-sm source-sans-3 xl:line-clamp-3 xl:px-0">Here, you can discover my advantages, learn about me, and explore my passion for programming and technology.</p>
+            </div>
+            <div class="flex mt-8 ">
+                <div class="text-left  xl:ml-44 xl:mr-[20%] mr-[12%]">
+                    <h1 class="text-xl font-semibold ml-3 xl:text-3xl mb-3">Get to know me!</h1>
+                    <p class="source-sans-3 mb-4 ml-4 text-sm  ">
+                        Hi, I’m Ihsan a 13 years old web devloper, a <span class="marked source-sans-3">passionate and dedicated Front-End web developer</span>  with expertise in modern web technologies. My work <span class="marked source-sans-3">focuses on creating functional, user-centric, and visually appealing</span> web applications.
+                    </p>
+                    <p class="source-sans-3 mb-4 ml-4 text-sm ">
+    
+                    </p>
+                    <p class="source-sans-3 mb-4 ml-4 text-sm ">                  
+                        I specialize in creating dynamic web applications using <span class="marked source-sans-3">React.js</span>, mastering state management with <span class="marked source-sans-3">Zustand</span>, and designing responsive interfaces with <span class="marked source-sans-3">Tailwind CSS</span>. I also excel in building <span class="marked source-sans-3">secure authentication systems</span> to <span class="marked source-sans-3">enhance user experience</span>.
+                    </p>
+                    <p class="source-sans-3 mb-4 ml-4 text-sm ">
+                        I’m driven by a <span class="marked source-sans-3 ">desire to create innovative solutions</span>, <span class="marked source-sans-3">solve complex problems</span>, and stay updated with the latest trends in technology. <span class="marked source-sans-3">ultimate goal is to build digital tools that empower users and make a positive impact</span>.
+                    </p>
+                </div>
+                <div class="xl:mr-[15%] xl:block hidden">
+                    <div class="flex flex-col item-start w-full ml-2 mb-4">
+                        <h1 class="text-xl font-semibold">My Skills</h1>
+                    </div>
+                    <div class="ml-2 w-min pr-[20%] rounded-md">
+                        <div class="grid grid-rows-4 pr-[20%] grid-flow-col gap-3">
+                            <p class="my-BG w-max p-2 ubuntu rounded text-sm">HTML</p>
+                            <p class="my-BG w-max p-2 ubuntu rounded text-sm">CSS</p>
+                            <p class="my-BG w-max p-2 ubuntu rounded text-sm">JavaScript</p>
+                            <p class="my-BG w-max p-2 ubuntu rounded text-sm">React JS</p>
+                            <p class="my-BG w-max p-2 ubuntu rounded text-sm">PHP</p>
+                            <p class="my-BG w-max p-2 ubuntu rounded text-sm">PYHTON</p>
+                            <p class="my-BG w-max p-2 ubuntu rounded text-sm">Zustand</p>
+                            <p class="my-BG w-max p-2 ubuntu rounded text-sm">Tailwind</p>
+                            <p class="my-BG w-max p-2 ubuntu rounded text-sm">Bootstrap</p>
+                            <p class="my-BG w-max p-2 ubuntu rounded text-sm">GIT</p>
+                            <p class="my-BG w-max p-2 ubuntu rounded text-sm">Responsive Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center xl:justify-start xl:ml-1">
+                <a href="https://wa.me/+6285147356774" target="_blank" class="ubuntu my-BG text-xl px-3 py-1 rounded-md btn-shadows">CONTACT ME!</a>
+            </div>
+        </div>
+        <div class="xl:hidden block">
+            <div class="flex flex-col item-start w-full ml-2 mb-4 ">
+                <h1 class="text-xl font-semibold">My Skills</h1>
+            </div>
+            <div class="ml-2 w-min pr-[20%] rounded-md">
+                <div class="grid grid-rows-4 pr-[20%] grid-flow-col gap-3">
+                    <p class="my-BG w-max p-2 ubuntu rounded text-sm">HTML</p>
+                    <p class="my-BG w-max p-2 ubuntu rounded text-sm">CSS</p>
+                    <p class="my-BG w-max p-2 ubuntu rounded text-sm">JavaScript</p>
+                    <p class="my-BG w-max p-2 ubuntu rounded text-sm">React JS</p>
+                    <p class="my-BG w-max p-2 ubuntu rounded text-sm">PHP</p>
+                    <p class="my-BG w-max p-2 ubuntu rounded text-sm">PYHTON</p>
+                    <p class="my-BG w-max p-2 ubuntu rounded text-sm">Zustand</p>
+                    <p class="my-BG w-max p-2 ubuntu rounded text-sm">Tailwind</p>
+                    <p class="my-BG w-max p-2 ubuntu rounded text-sm">Bootstrap</p>
+                    <p class="my-BG w-max p-2 ubuntu rounded text-sm">GIT</p>
+                    <p class="my-BG w-max p-2 ubuntu rounded text-sm">Responsive Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="" id="project">
+        <div class="flex flex-col items-center">
+            <div class="border flex flex-col items-center text-center mb-10">
+                <h1 class="text-4xl ubuntu sticky">My Project</h1> 
+                <div class="my-BGcolor w-9 h-1 mt-3"></div>
+                <p class="text-center px-20 mt-3 text-sm source-sans-3 xl:line-clamp-3 xl:px-0">Here, you'll see my project showcasing design creativity, coding skills, problem solving </p>
+            </div>
+
+            <div class="xl:grid xl:grid-cols-4 xl:grid-flow-row xl:gap-10">
+
+                <div class="mb-14">
+                    <img src="Assets/img/CHILL_project.png" alt="" class="object-contain border rounded-t-lg xl:min-w-[320px] xl:min-h-[205px] max-w-[300px] min-h-[200px]">
+                    <div class="bg-project w-[300px] xl:w-[320px] px-1 rounded-b-lg">
+                        <div class="pl-1 px-1 pb-1">
+                            <h1 class="text-xl font-semibold ubuntu">Chill</h1>
+                            <p class="mb-3">Chill adalah aplikasi web untuk streaming film dan acara TV dengan rekomendasi personal dan konten orisinal eksklusif.</p>
+                            <div class="flex justify-between pr-[1%] items-end">
+                                <a href="#" class="my-color underline">Website ku</a>
+                                <div class="grid grid-cols-2 grid-flow-row gap-1" >
+                                    <p class="my-BG w-max p-1 ubuntu rounded text-xs">Tailwind</p>                 
+                                    <p class="my-BG w-max p-1 ubuntu rounded text-xs">JavaScript</p>                         
+                                    <p class="my-BG w-max p-1 ubuntu rounded text-xs">React JS</p>                         
+                                    <p class="my-BG w-max p-1 ubuntu rounded text-xs">Zustand</p>          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-14">
+                    <img src="Assets/img/TDL_project.png" alt="" class="object-fit   border rounded-t-lg xl:min-w-[320px] xl:min-h-[205px] max-w-[300px] ">
+                    <div class="bg-project w-[300px] xl:w-[320px] px-1 rounded-b-lg">
+                        <div class="pl-1 px-1 pb-1">
+                            <h1 class="text-xl font-semibold ubuntu">TD-L</h1>
+                            <p class="mb-3">Chill adalah aplikasi web untuk streaming film dan acara TV dengan rekomendasi personal dan konten orisinal eksklusif.</p>
+                            <div class="flex justify-between pr-[1%] items-end">
+                                <a href="#" class="my-color underline">Website ku</a>
+                                <div class="grid grid-cols-2 grid-flow-row gap-.5" >
+                                    <p class="my-BG w-max p-1 ubuntu rounded text-xs">Tailwind</p>                 
+                                    <p class="my-BG w-max p-1 ubuntu rounded text-xs">JavaScript</p>                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    </section>
+
+    <section class=" xl:flex" id="contact">
+        <div class="xl:flex xl:h-screen xl:w-screen">
+            <div class=" xl:w-[46%] py-44 flex justify-center items-center ">
+                <h1 class="ubuntu text-5xl font-semibold">Ready to hear<br> from <span class="my-color">you</span>.</h1>
+            </div>
+            <div class="xl:flex-1 flex justify-center items-cente">
+                <div class="flex flex-col justify-center">
+                    <div class="border border-gray-400 p-5 rounded xl:mb-16 mb-5">
+                        <div class="text-center mb-6">
+                            <h1 class="text-2xl font-semibold ubuntu">Send me a message🚀</h1>
+                        </div>
+                        <div class="flex flex-col mb-3">
+                            <input type="text" placeholder="First name" class="ubuntu bg-gray-100 p-1 rounded ">
+                        </div>
+                        <div class="flex flex-col mb-3">
+                            <input type="text" placeholder="Email" class="ubuntu bg-gray-100 p-1 rounded ">
+                        </div>
+                        <div class="flex flex-col mb-3">               
+                            <input type="text" placeholder="Subject" class="ubuntu bg-gray-100 p-1 rounded ">
+                        </div>
+                        <div class="flex flex-col mb-5">
+                            <label for="" class="ubuntu">Tell me about your project</label>
+                            <textarea name="" id="" class="bg-gray-100 rounded ubuntu h-20"></textarea>
+                        </div>
+                        <div class="">
+                            <button class="ubuntu my-BG rounded-md btn-shadows p-2">Send Message</button>
+                            <!-- <button class="ubuntu my-BG text-xl px-3 py-1 rounded-md btn-shadows">CONTACT ME!</button> -->
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black pt-10 pb-2"> 
+        <div class="xl:flex">
+            <div class="ml-3 mb-9 flex-1 xl:flex items-center justify-center flex-col">
+                <div>
+                    <p class="text-white ubuntu font-semibold text-xl xl:text-2xl mb-2">Social Media</p>
+                </div>
+                <div>
+                    <a href="roblox.com"><i class="fa-brands fa-instagram text-xl xl:text-2xl text-white ml-1"></i></a>
+                    
+                    <i class="fa-brands fa-github text-xl xl:text-2xl text-white ml-3"></i>
+                    <i class="fa-brands fa-whatsapp text-xl xl:text-2xl text-white ml-3"></i>
+                    <i class="fa-brands fa-x-twitter text-xl xl:text-2xl text-white ml-3"></i>
+                </div>
+            </div>
+            <div class="ml-2 mb-4 flex-1">
+                <h1 class="text-white ubuntu font-semibold text-xl">Ihsan Rabbani</h1>
+                <p class="text-white pr-[3%] xl:pr-[45%]">a 13 years old web devloper,a passionate Front-End web developer. My work focuses on creating functional, user-centric,and visually appealing web applications. </p>
+            </div>
+        </div>      
+
+        <div class="h-1 mx-[2%] bg-gray-800 mb-3 rounded">
+        </div>
+        <div class="text-center">
+            <p class="text-gray-200 text-xs ubuntu">&copy; Copyright 2025 • Made By <span class="my-BG px-1 rounded">Ihsan Rabbani</span></p>
+        </div>
+    </footer>
+
+    <!-- 
+        <section class="h-screen">
+                <div class="border xl:w-[47%] flex justify-center items-center bg-red-500">
+                    <h1 class="ubuntu text-5xl font-semibold">Ready to hear<br> from <span class="my-color">you</span>.</h1>
+                </div>
+                <div class="border xl:flex-1 flex justify-center items-center bg-blue-500">
+                    <div class="border border-black p-5 rounded">
+                        <div class="text-center mb-6">
+                            <h1 class="text-2xl font-semibold ubuntu">Send me a message</h1>
+                        </div>
+                        <div class="flex flex-col mb-3">
+                            <input type="text" placeholder="First name" class="ubuntu bg-gray-100 p-1 rounded ">
+                        </div>
+                        <div class="flex flex-col mb-3">
+                            <input type="text" placeholder="Email" class="ubuntu bg-gray-100 p-1 rounded ">
+                        </div>
+                        <div class="flex flex-col mb-3">               
+                            <input type="text" placeholder="Subject" class="ubuntu bg-gray-100 p-1 rounded ">
+                        </div>
+                        <div class="flex flex-col mb-5">
+                            <label for="" class="ubuntu">Tell me about your project</label>
+                            <textarea name="" id="" class="bg-gray-100 rounded ubuntu h-20"></textarea>
+                        </div>
+                        <div class="">
+                            <button class="ubuntu my-BG rounded-md btn-shadows p-2">Send Message</button>
+                            <button class="ubuntu my-BG text-xl px-3 py-1 rounded-md btn-shadows">CONTACT ME!</button> -->
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+    <!-- ==================================================================================================================================================== -->
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script> 
+    
+        var typed = new Typed(".autoType", {
+            strings : ["Programmer", "Student", "Web Devloper", "Thinker"],
+            typeSpeed : 150,
+            backSpeed : 150,
+            loop: true,
+        })
+    </script>
+</body>
+</html>
