@@ -126,7 +126,7 @@
 
     <section class="" id="project">
         <div class="flex flex-col items-center">
-            <div class="border flex flex-col items-center text-center mb-10">
+            <div class="flex flex-col items-center text-center mb-10">
                 <h1 class="text-4xl ubuntu sticky">My Project</h1> 
                 <div class="my-BGcolor w-9 h-1 mt-3"></div>
                 <p class="text-center px-20 mt-3 text-sm source-sans-3 xl:line-clamp-3 xl:px-0">Here, you'll see my project showcasing design creativity, coding skills, problem solving </p>
@@ -141,7 +141,7 @@
                             <h1 class="text-xl font-semibold ubuntu">Chill</h1>
                             <p class="mb-3">Chill adalah aplikasi web untuk streaming film dan acara TV dengan rekomendasi personal dan konten orisinal eksklusif.</p>
                             <div class="flex justify-between pr-[1%] items-end">
-                                <a href="#" class="my-color underline">Website ku</a>
+                                <a href="#" class="my-color underline">Visit Website</a>
                                 <div class="grid grid-cols-2 grid-flow-row gap-1" >
                                     <p class="my-BG w-max p-1 ubuntu rounded text-xs">Tailwind</p>                 
                                     <p class="my-BG w-max p-1 ubuntu rounded text-xs">JavaScript</p>                         
@@ -160,7 +160,7 @@
                             <h1 class="text-xl font-semibold ubuntu">TD-L</h1>
                             <p class="mb-3">Chill adalah aplikasi web untuk streaming film dan acara TV dengan rekomendasi personal dan konten orisinal eksklusif.</p>
                             <div class="flex justify-between pr-[1%] items-end">
-                                <a href="#" class="my-color underline">Website ku</a>
+                                <a href="#" class="my-color underline">Visit Website</a>
                                 <div class="grid grid-cols-2 grid-flow-row gap-.5" >
                                     <p class="my-BG w-max p-1 ubuntu rounded text-xs">Tailwind</p>                 
                                     <p class="my-BG w-max p-1 ubuntu rounded text-xs">JavaScript</p>                               
@@ -177,7 +177,7 @@
                             <h1 class="text-xl font-semibold ubuntu">Block Wallpaper</h1>
                             <p class="mb-3">Block Wallpaper adalah tempat dimana kamu menemukan wallpaper wallpaper pemandangan Minecraft yang memukau.</p>
                             <div class="flex justify-between pr-[1%] items-end">
-                                <a href="#" class="my-color underline">Website ku</a>
+                                <a href="#" class="my-color underline">Visit Website</a>
                                 <div class="grid grid-cols-2 grid-flow-row gap-2" >
                                     <p class="my-BG w-max p-1 ubuntu rounded text-xs">HTML</p>                 
                                     <p class="my-BG w-max p-1 ubuntu rounded text-xs">CSS</p>                           
@@ -194,9 +194,9 @@
                             <h1 class="text-xl font-semibold ubuntu">Labirin</h1>
                             <p class="mb-3">Labirin adalah game sederhana dimana kamu berperan sebagai ksatria yang ingin menyelamatkan sebuah kastil.</p>
                             <div class="flex justify-between pr-[1%] items-end">
-                                <a href="#" class="my-color underline">Download File</a>
+                                <a href="Project/Labirin_ihsan.exe" download class="my-color underline">Download File</a>
                                 <div class=" border" >
-                                    <p class="my-BG w-max p-1 ubuntu rounded text-xs">Pyhton</p>      0                                   
+                                    <p class="my-BG w-max p-1 ubuntu rounded text-xs">Pyhton</p>                                  
                                 </div>
                             </div>
                         </div>
@@ -217,24 +217,22 @@
                         <div class="text-center mb-6">
                             <h1 class="text-2xl font-semibold ubuntu">Send me a message🚀</h1>
                         </div>
-                        <div class="flex flex-col mb-3">
-                            <input type="text" placeholder="First name" class="ubuntu bg-gray-100 p-1 rounded ">
-                        </div>
-                        <div class="flex flex-col mb-3">
-                            <input type="text" placeholder="Email" class="ubuntu bg-gray-100 p-1 rounded ">
-                        </div>
-                        <div class="flex flex-col mb-3">               
-                            <input type="text" placeholder="Subject" class="ubuntu bg-gray-100 p-1 rounded ">
-                        </div>
-                        <div class="flex flex-col mb-5">
-                            <label for="" class="ubuntu">Tell me about your project</label>
-                            <textarea name="" id="" class="bg-gray-100 rounded ubuntu h-20"></textarea>
-                        </div>
-                        <div class="">
-                            <button class="ubuntu my-BG rounded-md btn-shadows p-2">Send Message</button>
-                            <!-- <button class="ubuntu my-BG text-xl px-3 py-1 rounded-md btn-shadows">CONTACT ME!</button> -->
-        
-                        </div>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="d6abb4fe-54be-43bd-8579-79e93af4dc93">
+                            <div class="flex flex-col mb-3">
+                                <input name="name" type="text" placeholder="First name" class="ubuntu bg-gray-100 p-1 rounded ">
+                            </div>
+                            <div class="flex flex-col mb-3">
+                                <input name="email" type="text" placeholder="Email" class="ubuntu bg-gray-100 p-1 rounded ">
+                            </div>
+                            <div class="flex flex-col mb-5">
+                                <label for="" class="ubuntu">Tell me about your project</label>
+                                <textarea name="message" id="" class="bg-gray-100 rounded ubuntu h-20"></textarea>
+                            </div>
+                            <div class="">
+                                <button type="submit" class="ubuntu my-BG rounded-md btn-shadows p-2">Send Message</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -244,20 +242,23 @@
     <footer class="bg-black pt-10 pb-2"> 
         <div class="xl:flex">
             <div class="ml-3 mb-9 flex-1 xl:flex items-center justify-center flex-col">
-                <div>
-                    <p class="text-white ubuntu font-semibold text-xl xl:text-2xl mb-2">Social Media</p>
-                </div>
-                <div>
-                    <a href="roblox.com"><i class="fa-brands fa-instagram text-xl xl:text-2xl text-white ml-1"></i></a>
-                    
-                    <i class="fa-brands fa-github text-xl xl:text-2xl text-white ml-3"></i>
-                    <i class="fa-brands fa-whatsapp text-xl xl:text-2xl text-white ml-3"></i>
-                    <i class="fa-brands fa-x-twitter text-xl xl:text-2xl text-white ml-3"></i>
+                <div class="xl:text-center xl:flex xl:flex-col">
+                    <div>
+                        <p class="text-white ubuntu font-semibold text-xl xl:text-2xl mb-2">Social Media</p>
+                    </div>
+                    <div class="">
+                        <a href="https://www.instagram.com/ihsanrrrr21/" target="_blank"><i class="fa-brands fa-instagram text-xl xl:text-2xl text-white "></i></a>
+                        <a href="https://github.com/Ihsanrabani" target="_blank"><i class="fa-brands fa-github text-xl xl:text-2xl text-white ml-3"></i></a>
+                        <a href="https://wa.me/+6285147356774" target="_blank"><i class="fa-brands fa-whatsapp text-xl xl:text-2xl text-white ml-3"></i></a>
+                        <a href="https://www.linkedin.com/in/ihsan-rabbani-850052281/" target="_blank"><i class="fa-brands fa-linkedin text-xl xl:text-2xl text-white ml-3"></i></a>
+                        <a href="mailto:ztex2727@gmail.com" target="_blank"><i class="fa-solid fa-envelope text-xl xl:text-2xl text-white ml-3"></i></a>
+                        
+                    </div>
                 </div>
             </div>
             <div class="ml-2 mb-4 flex-1">
                 <h1 class="text-white ubuntu font-semibold text-xl">Ihsan Rabbani</h1>
-                <p class="text-white pr-[3%] xl:pr-[45%]">a 13 years old web devloper,a passionate Front-End web developer. My work focuses on creating functional, user-centric,and visually appealing web applications. </p>
+                <p class="text-white pr-[3%] xl:pr-[45%]">A 13 years old web devloper,a passionate Front-End web developer. My work focuses on creating functional, user-centric,and visually appealing web applications. </p>
             </div>
         </div>      
 
@@ -267,39 +268,6 @@
             <p class="text-gray-200 text-xs ubuntu">&copy; Copyright 2025 • Made By <span class="my-BG px-1 rounded">Ihsan Rabbani</span></p>
         </div>
     </footer>
-
-    <!-- 
-        <section class="h-screen">
-                <div class="border xl:w-[47%] flex justify-center items-center bg-red-500">
-                    <h1 class="ubuntu text-5xl font-semibold">Ready to hear<br> from <span class="my-color">you</span>.</h1>
-                </div>
-                <div class="border xl:flex-1 flex justify-center items-center bg-blue-500">
-                    <div class="border border-black p-5 rounded">
-                        <div class="text-center mb-6">
-                            <h1 class="text-2xl font-semibold ubuntu">Send me a message</h1>
-                        </div>
-                        <div class="flex flex-col mb-3">
-                            <input type="text" placeholder="First name" class="ubuntu bg-gray-100 p-1 rounded ">
-                        </div>
-                        <div class="flex flex-col mb-3">
-                            <input type="text" placeholder="Email" class="ubuntu bg-gray-100 p-1 rounded ">
-                        </div>
-                        <div class="flex flex-col mb-3">               
-                            <input type="text" placeholder="Subject" class="ubuntu bg-gray-100 p-1 rounded ">
-                        </div>
-                        <div class="flex flex-col mb-5">
-                            <label for="" class="ubuntu">Tell me about your project</label>
-                            <textarea name="" id="" class="bg-gray-100 rounded ubuntu h-20"></textarea>
-                        </div>
-                        <div class="">
-                            <button class="ubuntu my-BG rounded-md btn-shadows p-2">Send Message</button>
-                            <button class="ubuntu my-BG text-xl px-3 py-1 rounded-md btn-shadows">CONTACT ME!</button> -->
-
-                        </div>
-                    </div>
-                </div>
-        </section>
-
 
     <!-- ==================================================================================================================================================== -->
     <script src="index.js"></script>
